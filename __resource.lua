@@ -1,4 +1,4 @@
--- Simple 911 Command (With Location) -- 
+-- Simple 911 Command (With Location & Blip) -- 
 		-- Made By Chezza --
 
 client_scripts {
