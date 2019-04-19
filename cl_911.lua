@@ -1,9 +1,12 @@
 -- Simple 911 Command (With Location & Blip) -- 
 		-- Made By Chezza --
 
+displayTime = 300 -- Refreshes Blips every 5 Minutes by Default --  
+
 -- Code --
 
 blip = nil
+blips = {}
 
 Citizen.CreateThread(function()
     TriggerEvent('chat:addSuggestion', '/911', 'Submits a 911 call to the Emergency Services!', {
@@ -20,11 +23,11 @@ AddEventHandler('911:setBlip', function(name, x, y, z)
     BeginTextCommandSetBlipName("STRING")
     AddTextComponentString('911 Call - ' .. name)
     EndTextCommandSetBlipName(blip)
-end)
-
-RegisterNetEvent('911:killBlip')
-AddEventHandler('911:killBlip', function()
-    RemoveBlip(blip)
+    table.insert(blips, blip)
+    Wait(displayTime * 1000)
+    for i, blip in pairs(blips) do 
+        RemoveBlip(blip)
+    end
 end)
 
 -- Command -- 
