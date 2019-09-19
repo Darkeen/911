@@ -2,6 +2,7 @@
 ### Configuration
 ```lua
 -- Located within the cl_911.lua --
+displayTime = 300 -- Refreshes Blips every 5 Minutes by Default --  
 ondutycommand = 'onduty' -- Change this if you already have a 'onduty' command already set --
 passwordmode = true -- By Changing this to 'false' it will make it so you need a password to go on-duty --  { For the 'passwordmode' and 'password' to work you need to have 'ondutymode' set to 'true' } --
 password = '123' -- Please change this to your desired password -- { For the 'passwordmode' and 'password' to work you need to have 'ondutymode' set to 'true' } --
