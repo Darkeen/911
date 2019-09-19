@@ -5,7 +5,7 @@ displayLocation = true  -- By Changing this to 'false' it will make it so your l
 blips = true -- By Changing this to 'false' it will disable 911 call blips meaning your location will not be shown on the map --
 disableChatCalls = false -- By Chaning this to 'false' it will make it so 911 call are not displayed in chat (Recommended to have Discord Webhook setup if disabling this) --
 webhookurl = 'Insert Webhook URL Here' -- Add your discord webhook url here, if you do not want this leave it blank (More info on FiveM post) --
-ondutymode = true -- By chaning this to 'true' it will make it so only Emergency Services and people who have used the 'onduty' command can see 911 calls and blips --
+ondutymode = false -- By chaning this to 'true' it will make it so only Emergency Services and people who have used the 'onduty' command can see 911 calls and blips --
 
 -- Code --
 
